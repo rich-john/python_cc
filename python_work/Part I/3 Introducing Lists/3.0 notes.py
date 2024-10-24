@@ -73,3 +73,47 @@ for guest in guests:
 print(f"\n{guests[0]} can't make it to dinner.")
 
 # 1.3.3 Organizing a List
+
+# Sorting a List Permanently with the sort() Method
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort()
+print(cars)
+
+# Sorting a List Permanently in Reverse Alphabetical Order
+cars.sort(reverse=True)
+print(cars)
+
+# Sorting a List Temporarily with the sorted() Function
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print("Here is the original list:")
+print(cars)
+
+print("\nHere is the sorted list:")
+print(sorted(cars))
+
+print("\nHere is the original list again:")
+print(cars)
+
+# Printing a List in Reverse Order
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print(cars)
+
+cars.reverse()
+print(cars)
+
+# Finding the Length of a List
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print(len(cars))
+
+# Avoiding Index Errors When Working with Lists
+# This code will raise an IndexError
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles[3])
+
+# better to use -1 to find the end of the list
+# The only time this approach will cause an error is when the list is empty
+print(motorcycles[-1])
+
+
+
+
